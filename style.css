@@ -1,149 +1,74 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #6c6b6b;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-family: "Arial,Helvetica,sans-serif";
-}
-
-header {
-  width: 100%;
-  height: 100px;
-  background-color: darkgreen;
-  color: #fff;
-}
-
-header a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header h1 {
+.app-header-contents {
   text-align: center;
-  margin-top: 10px;
+}
+.start-button {
+  border-radius: 8px;
+  border : 2px solid rgb(111, 111, 236);
+  background-color:rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  box-shadow :-2px -2px 2px #999 inset;
+  width: 150px;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 10px;
+.start-button:hover {
+  background-color:rgb(111, 111, 236);
+  color: white;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  margin:10px 0;
-  background-color: darkgreen;
+.start-button:active{
+  box-shadow: 2px 2px 2px #999 inset;
+  color: transparent;
+  text-shadow: 2px 2px 0px #666;
 }
 
-nav ul {
-  display: flex;
-  gap: 20px;
+.result {
+  margin-top: 50px;
+  display: none;
 }
-
-nav li {
-  display: inline-block;
-  margin: 0 20px;
-  list-style: none;
-  color: #fff;
-}
-
-nav a {
-  color:#38b48b;
-  text-decoration: none;
-}
-
-main {
-  background-color: #ecfcdf;
-  padding: 10px 40px 40px;
-  flex:1;
-}
-
-main p {
-  line-height: 40px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.left-right-wrapper {
+div.row {
   display: flex;
   justify-content: center;
 }
-
-.left {
-  width: 30%;
+div.row .radius {
+  height: 300px;
+  width: 300px;
+  margin: 30px;
 }
 
-.left img {
-  border-radius: 10px;
-  max-height: 1000px; 
-  margin-right:10px ;
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.right {
-  background-color: #fff;
-  padding:0 10px;
-  border-radius: 10px;
-  margin-left: 10px;
-  width: 70%;
-  box-sizing: border-box;
-}
-
-.label {
-  width: 100px;
+div.row .title {
+  font-size: 28px;
   font-weight: bold;
-}
-
-.profile {
-  display: flex;
-  align-items: flex-start;
-  line-height: 40px;
-}
-
-.social {
-  position: relative;
-  color: #38b48b;
-  left: 100px;
-}
-
-.social i {
-  display: inline-block;
-  margin: 0px 20px 20px 0px;
-}
-
-footer {
-  width: 100%;
-  height: 100px;
-  background-color: darkgreen;
   text-align: center;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 3px;
 }
 
-@media screen and (max-width:768px) {
-  .left-right-wrapper {
-    display: block;
-  }
-  .left,.right {
-    width: 100%;
-  }
+div.row .stars {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
 
-  .right {
-    margin-left: 0;
-    margin-top: 20px;
-  }
+div.row .detail {
+  margin-left: 18px;
+  margin-right: 18px;
+  text-align: center;
+}
+
+div.row .radius.money {
+  border :2px solid yellow;
+  border-radius: 50%;
+}
+
+div.row .radius.work {
+  border :2px solid green;
+  border-radius: 50%;
+}
+
+div.row .radius.health {
+  border :2px solid aqua;
+  border-radius: 50%;
 }
